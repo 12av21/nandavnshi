@@ -1,0 +1,577 @@
+/* Registration Number */
+.registration-number {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+/* Global Styles */
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #f59e0b;
+    --dark-color: #1e3a8a;
+    --light-color: #f8f9fa;
+    --success-color: #059669;
+    --danger-color: #dc2626;
+    --warning-color: #f59e0b;
+    --info-color: #0ea5e9;
+}
+
+/* Stats Cards */
+.border-left-primary {
+    border-left: 0.25rem solid var(--primary-color) !important;
+}
+.border-left-success {
+    border-left: 0.25rem solid var(--success-color) !important;
+}
+.border-left-info {
+    border-left: 0.25rem solid var(--info-color) !important;
+}
+.text-xs {
+    font-size: .8rem;
+}
+.text-gray-300 { color: #e3e6f0 !important; }
+.text-gray-800 { color: #343a40 !important; }
+.font-weight-bold { font-weight: 700 !important; }
+
+/* Casualty Details in Stats Card */
+.casualty-details {
+    border-top: 1px solid #e9ecef;
+    padding-top: 0.75rem;
+}
+
+.casualty-details p {
+    line-height: 1.4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Top Bar */
+.top-bar {
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header layout and elements */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo left aur right wala corner me */
+}
+
+.site-header .logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.site-logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text h1, .logo-text h4 {
+    margin: 0;
+    font-weight: 700;
+}
+.logo-text p {
+    margin: 0;
+}
+
+/* Registration Number */
+.registration-number {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    text-align: right;   /* always push to corner */
+}
+
+/* Header Right */
+.header-right {
+    margin-left: auto;        /* Left se push hoke corner tak jayega */
+    text-align: right;        /* Text aur content right align */
+    display: flex;
+    flex-direction: column;   /* Reg. No upar, search neeche */
+    align-items: flex-end;    /* Sab content bilkul right corner chipka */
+    justify-content: flex-end;
+}
+
+/* Search Bar */
+.header-right .search-box {
+    max-width: 260px;   /* Thoda manageable size */
+    width: 100%;
+}
+.corner-button {
+  position: fixed;   /* screen pe fix kar dega */
+  top: 10px;         /* upar se 10px space */
+  right: 10px;       /* right corner se 10px space */
+  z-index: 9999;     /* sab elements ke upar dikhe */
+}
+
+
+/* Responsive (mobile: center align) */
+@media (max-width: 767.98px) {
+    .header-right {
+        align-items: center;
+        text-align: center;
+    }
+    .header-right .search-box {
+        margin: 0.5rem auto 0;
+    }
+}
+
+/* Help Floating Button */
+.help-button {
+  position: fixed;         /* pura page ke hisaab se fix hoga */
+  bottom: 20px;            /* neeche se 20px */
+  right: 20px;             /* right se 20px */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 9999;           /* har cheez ke upar dikhne ke liye */
+}
+
+/* Quick Links & Icon Box Helpers */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+}
+.hover-bg:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+/* =============================== */
+/* Baki code same hi rakha hai     */
+/* =============================== */
+
+/* Our Founders Section */
+.founders-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.section-title .divider {
+    height: 3px;
+    width: 80px;
+    margin: 1rem auto;
+    opacity: 1;
+}
+
+.founders-section .card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.founders-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.founders-section .position-relative {
+    aspect-ratio: 4/5; /* Portrait aspect ratio */
+    overflow: hidden;
+    height: auto;
+    border-radius: 6px;
+}
+.founders-section .position-relative img,
+.founders-section .position-relative .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.founders-section .card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.founders-section .social-links {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    z-index: 5;
+    display: flex;
+    gap: 8px;
+    background: rgba(0,0,0,0.35);
+    padding: 6px 8px;
+    border-radius: 20px;
+}
+
+.founders-section .card-body {
+    padding: 1.5rem;
+}
+
+.founders-section .card-title {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.founders-section .text-muted {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+.founders-section .card-text {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.logo img {
+    max-height: 80px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation */
+.navbar {
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    padding: 0.8rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding-left: 1.8rem;
+}
+
+/* Slider */
+.slider .carousel-item {
+    overflow: hidden;
+}
+.slider .carousel-item img {
+    width: 100%;
+    height: min(50vh, 450px);
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+}
+
+/* Co-Founders Section */
+.co-founders-section {
+    background-color: #f8f9fa;
+}
+.co-founder-card {
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+.co-founder-card:hover {
+    transform: translateY(-5px);
+}
+.co-founder-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    display: inline-block;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.co-founder-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+.co-founder-designation {
+    font-size: 0.85rem;
+    min-height: 34px; /* Ensures alignment for multi-line designations */
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 60%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* Quick Links */
+.quick-links .card {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.quick-links .card:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.quick-links .card:hover i {
+    color: white !important;
+}
+
+/* Event Items */
+.event-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.date-box {
+    min-width: 60px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: #e5e7eb;
+}
+
+footer h5 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+footer h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #f59e0b;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: none;
+    z-index: 999;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: #0b5ed7;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Alert Banner */
+.alert-banner {
+    background: #f8d7da; /* Red background */
+    color: #842029;      /* Dark red text */
+    border-top: 4px solid #f5c2c7; /* Lighter red border */
+    overflow: hidden;
+}
+.alert-banner .alert-text {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; /* start off-canvas to the right */
+    will-change: transform;
+}
+@keyframes alert-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* =============================== */
+/* Responsive Styles               */
+/* =============================== */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: var(--dark-color);
+        padding: 1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+    }    
+}
+
+@media (max-width: 767.98px) {
+    /* Typography */
+    h1, .h1, .display-4, .display-5, .display-6 {
+        font-size: calc(1.3rem + 1.2vw);
+    }
+    h2, .h2 {
+        font-size: calc(1.25rem + 0.9vw);
+    }
+    .lead {
+        font-size: 1rem;
+    }
+
+    /* Spacing */
+    .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    /* Header */
+    .site-logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    /* Slider */
+    .slider .carousel-item {
+        height: min(40vh, 250px);
+    }
+
+    .quick-links .col-6 {
+        margin-bottom: 15px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer h5::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-links {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .co-founder-card img {
+        width: 90px;
+        height: 90px;
+    }
+}
